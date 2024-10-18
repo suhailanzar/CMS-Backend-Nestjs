@@ -39,8 +39,6 @@ async getArticles(userid: string): Promise<articleDto[] | null> {
     
     // Find articles by userid, converting userid to ObjectId
     const articles = await this.articleModel.find({userid:userid})
-
-    console.log('articles in neast are',articles);
     
 
     // Check if articles were found
